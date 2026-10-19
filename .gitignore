@@ -1,0 +1,84 @@
+# Local SDK, dependency cache, and portable release output
+/.tools/
+/artifacts/
+
+# .NET build and test output
+[Bb]in/
+[Oo]bj/
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+# Visual Studio / Rider local workspace state
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Saved identity records, portraits, and SQLite sidecar files
+Data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+.mykad-write-*
+
+# Credentials and machine-local secrets
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+.aws/
+.ssh/
+secrets/
+credentials/
+
+# Card captures, screenshots, exports, and backup copies
+# Keep real identity data out of source control, including binary fixtures.
+captures/
+screenshots/
+photos/
+exports/
+backups/
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+*.webp
+*.bak
+*.backup
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# Crash dumps and symbols can contain memory contents or local paths
+*.dmp
+*.mdmp
+*.dump
+*.pdb
+
+# Local logs and OS metadata
+*.log
+Thumbs.db
+Desktop.ini
+.DS_Store

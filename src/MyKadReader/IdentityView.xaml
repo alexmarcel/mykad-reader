@@ -1,0 +1,24 @@
+<UserControl x:Class="MyKadReader.IdentityView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+ <Border Background="White" BorderBrush="#DDE4EE" BorderThickness="1" CornerRadius="10" Padding="24">
+  <Grid>
+   <Grid.ColumnDefinitions><ColumnDefinition Width="180"/><ColumnDefinition Width="24"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+   <StackPanel>
+    <Border Height="210" Background="#EDF2F7" CornerRadius="6"><Image x:Name="Portrait" Stretch="Uniform" Margin="8"/></Border>
+    <TextBlock x:Name="PhotoStatus" Foreground="#65758B" Margin="0,10,0,0" TextAlignment="Center" Text="No portrait"/>
+   </StackPanel>
+   <StackPanel Grid.Column="2">
+    <TextBlock Text="FULL NAME" Foreground="#65758B" FontSize="11"/>
+    <TextBlock x:Name="FullName" FontSize="23" FontWeight="SemiBold" Margin="0,3,0,20" Text="—"/>
+    <TextBlock Text="MYKAD NUMBER" Foreground="#65758B" FontSize="11"/>
+    <TextBlock x:Name="Number" FontSize="19" Margin="0,3,0,18" Text="—"/>
+    <Grid Margin="0,0,0,18"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/></Grid.ColumnDefinitions>
+     <StackPanel><TextBlock Text="DATE OF BIRTH" Foreground="#65758B" FontSize="11"/><TextBlock x:Name="Dob" Margin="0,3,0,0" Text="—"/></StackPanel>
+     <StackPanel Grid.Column="1"><TextBlock Text="GENDER" Foreground="#65758B" FontSize="11"/><TextBlock x:Name="Gender" Margin="0,3,0,0" Text="—"/></StackPanel>
+    </Grid>
+    <TextBlock Text="ADDRESS" Foreground="#65758B" FontSize="11"/>
+    <TextBlock x:Name="Address" Margin="0,3,0,14" Text="—"/>
+    <TextBlock x:Name="Availability" Foreground="#8B5A16" FontSize="12"/>
+   </StackPanel>
+  </Grid>
+ </Border>
+</UserControl>
